@@ -38,7 +38,7 @@ Parse.Cloud.define("smsNewMembers", function(request, response) {
     body: {
       "src" : plivo_number,
       "dst" : request.params.phonenumber,
-      "text" : "You were just added to a new Anonme group. Download Anonme from the App Store to view your group"
+      "text" : "You were just added to a new anonme group. Download anonme from the App Store to view your group"
     },
     success: function(httpResponse) {
       console.log(httpResponse.text);
